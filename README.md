@@ -1,40 +1,40 @@
-# Transposição de Linhas para Colunas em Arquivo CSV e Conversão para Excel
+# Transposing Rows to Columns in CSV File and Converting to Excel
 
-Este script em Python lê um arquivo CSV, transpõe as linhas para colunas, converte os dados para um arquivo Excel (XLSX) e adiciona um cabeçalho específico às colunas.
+This Python script reads a CSV file, transposes the rows into columns, converts the data to an Excel (XLSX) file, and adds a specific header to the columns.
 
-## Requisitos
+## Requirements
 
 - Python 3.x
-- Bibliotecas:
+- Libraries:
   - `openpyxl`
   - `pandas`
 
-## Funcionamento
+## How it Works
 
-1. **Obtenção da Data Atual:**
-   - O script obtém a data atual e a formata no padrão YYYYMMDD.
+1. **Obtaining Current Date:**
+   - The script fetches the current date and formats it as YYYYMMDD.
 
-2. **Leitura e Conversão do CSV para Excel:**
-   - O script lê o arquivo CSV com o nome formatado pela data obtida.
-   - Os dados do CSV são convertidos para um DataFrame do `pandas`.
-   - Em seguida, os dados são escritos em um arquivo Excel (XLSX) com o mesmo nome do CSV.
+2. **Reading and Converting CSV to Excel:**
+   - The script reads the CSV file with the name formatted by the obtained date.
+   - CSV data is converted to a `pandas` DataFrame.
+   - Subsequently, the data is written to an Excel (XLSX) file with the same name as the CSV.
 
-3. **Adição de Cabeçalho ao Excel:**
-   - Um cabeçalho específico é definido para as colunas do Excel.
-   - O script carrega o arquivo Excel recém-criado usando `openpyxl`.
-   - O cabeçalho é inserido na primeira linha da planilha.
+3. **Adding Header to Excel:**
+   - A specific header is defined for the Excel columns.
+   - The script loads the newly created Excel file using `openpyxl`.
+   - The header is inserted into the first row of the worksheet.
 
-4. **Salvamento do Excel com Cabeçalho:**
-   - A planilha do Excel é salva com o novo cabeçalho.
+4. **Saving Excel with Header:**
+   - The Excel worksheet is saved with the new header.
 
-5. **Remoção de Arquivos Temporários:**
-   - Os arquivos temporários criados durante o processo são removidos do sistema.
+5. **Removal of Temporary Files:**
+   - Temporary files created during the process are removed from the system.
 
-## Utilização
+## Usage
 
-1. Certifique-se de ter Python instalado no seu ambiente.
-2. Instale as bibliotecas necessárias executando `pip install openpyxl pandas`.
-3. Execute o script Python. Ele lerá o arquivo CSV, realizará as operações descritas e salvará o resultado no mesmo diretório.
-4. Verifique os arquivos resultantes com os dados transpostos e convertidos para Excel.
+1. Ensure you have Python installed in your environment.
+2. Install the necessary libraries by running `pip install openpyxl pandas`.
+3. Execute the Python script. It will read the CSV file, perform the described operations, and save the result in the same directory.
+4. Check the resulting files with the transposed and converted data in Excel.
 
-Este script simplifica o processo de transpor linhas para colunas em um arquivo CSV e convertê-lo para Excel, fornecendo um cabeçalho específico para as colunas.
+This script simplifies the process of transposing rows into columns in a CSV file and converting it to Excel, providing a specific header for the columns.
